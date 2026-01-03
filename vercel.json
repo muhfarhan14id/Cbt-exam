@@ -1,13 +1,15 @@
 {
   "redirects": [
     {
-      "source": "/",
+      "source": "/((?!un\.html$).*)",
+      "has": [
+        {
+          "type": "header",
+          "key": "x-vercel-ip-country",
+          "value": "ID"
+        }
+      ],
       "destination": "/un.html",
-      "permanent": false
-    },
-    {
-      "source": "/:path+",
-      "destination": "/un.html", 
       "permanent": false
     }
   ]
