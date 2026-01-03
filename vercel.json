@@ -13,7 +13,7 @@
       "permanent": false
     },
     {
-      "source": "/:path+",
+      "source": "/:path((?!un\.html$).*)",
       "has": [
         {
           "type": "header",
