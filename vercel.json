@@ -2,17 +2,31 @@
   "redirects": [
     {
       "source": "/",
-      "destination": "/un.html",
-      "permanent": true
-    },
-    {
-      "source": "/index.html",
-      "destination": "/un.html",
-      "permanent": true
-    },
-    {
-      "source": "/(.*)",
       "has": [
+        {
+          "type": "header",
+          "key": "x-vercel-ip-country",
+          "value": "ID"
+        }
+      ],
+      "destination": "/un.html",
+      "permanent": false
+    },
+    {
+      "source": "/:path+",
+      "has": [
+        {
+          "type": "header",
+          "key": "x-vercel-ip-country",
+          "value": "ID"
+        },
+        {
+          "type": "header",
+          "key": "x-vercel-ip-country",
+          "value": "ID"
+        }
+      ],
+      "missing": [
         {
           "type": "header",
           "key": "x-vercel-ip-country",
