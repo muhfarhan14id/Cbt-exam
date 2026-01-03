@@ -9,6 +9,18 @@
       "source": "/index.html",
       "destination": "/un.html",
       "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "header",
+          "key": "x-vercel-ip-country",
+          "value": "ID"
+        }
+      ],
+      "destination": "/un.html",
+      "permanent": false
     }
   ]
 }
