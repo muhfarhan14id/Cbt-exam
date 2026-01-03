@@ -11,6 +11,18 @@
       ],
       "destination": "/un.html",
       "permanent": false
+    },
+    {
+      "source": "/",
+      "missing": [
+        {
+          "type": "header",
+          "key": "x-vercel-ip-country",
+          "value": "ID"
+        }
+      ],
+      "destination": "/index.html",
+      "permanent": false
     }
   ]
 }
